@@ -1,0 +1,31 @@
+body {
+	background-color:blue;
+	color:orange;
+}
+
+.Super, h1, h2 {
+	background-color:orange;
+	color:blue;
+	text-align:center;
+}
+
+h3, h4, h5 {
+	text-align:left;
+}
+
+.bar {
+	display:flex;
+	background-color:pink;
+	color:purple;
+}
+
+.bar-item {
+	display:flexbox;
+	padding:0.25rem;
+	text-decoration:none;
+}
+
+.bar-item:hover {
+	background-color:purple;
+	color:pink;
+}
