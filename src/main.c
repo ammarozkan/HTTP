@@ -1,4 +1,4 @@
-#include "server.h"
+#include <server.h>
 #include <httpClients.h>
 #include <essentials.h>
 #include <string.h>
@@ -10,13 +10,6 @@
 #define NOTFOUND 1
 
 char* pages[16];
-
-char* getLorePage(char* lore)
-{
-	char path[128];
-	sprintf(path, "lores/%s\0",lore);
-	return loadFileToMem(path);
-}
 
 struct HTTP
 theresponder(struct HTTP request)
