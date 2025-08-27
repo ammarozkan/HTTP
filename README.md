@@ -1,6 +1,16 @@
 # HTTP
 Serves Hyper Pages.
 
+Good to know
+
+- main function is at the src/main.c, and most
+of the change for server could managed from main.c
+by changing the main and theresponder.
+- include directory is the include
+- only requirement is support of linux tcp sockets,
+pthread (can be avoided with --nonparallel), dirent
+(can be avoided with not using namedpages).
+
 ## theresponder
 
 When a request cames up, HTTP request will be parsed
